@@ -88,8 +88,8 @@
 }
 
 .btn-white {
-  background-color: #040270;
-  color: #fff;
+  background-color: #040270 !important;
+  color: #fff !important;
 }
 
 .btn::after {
