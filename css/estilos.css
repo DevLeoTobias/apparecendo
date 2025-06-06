@@ -1,0 +1,395 @@
+.logo-nav {
+  width: 50px;
+}
+@media (min-width: 768px) {
+  #features p,
+  #features li {
+    font-size: 1.25rem; /* ou 20px */
+  }
+
+  #features h5 {
+    font-size: 1.5rem; /* ou 24px */
+  }
+}
+/* feedback img */
+.img-profile {
+    width: 300px !important;
+    height: 120px !important;
+    object-fit: cover; /* Garante que a imagem não fique esticada */
+}
+
+/* MEU CSS */
+.secao2-anuncio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle-anuncio {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Espaço entre o círculo e o texto */
+}
+.label {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.navbar-collapse ul li a {
+  font-weight: bold;
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.logo-nav {
+  width: 10rem;
+}
+.logo-nav {
+  width: 120px; /* Mobile padrão */
+}
+
+@media (min-width: 992px) {
+  /* lg = desktop */
+  .logo-nav {
+    width: 20rem;
+  }
+}
+/*css do botao */
+#btnComecar {
+  height: 5rem;
+  width: 15rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #040270;
+  color: #fff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1) scaleY(1.4);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 992px) {
+  .max-w {
+    max-width: 420px;
+  }
+}
+/*modal footer*/
+.modal-footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*modal header*/
+.modal-header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+/* css como funciona */
+@media (min-width: 768px) {
+  #features p,
+  #features li {
+    font-size: 1.65rem; /* ou 20px */
+  }
+
+  #features h5 {
+    font-size: 2.5rem; /* ou 24px */
+  }
+}
+
+
+/* cards planos */
+  .plano-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            position: relative;
+        }
+        
+        .plano-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+        }
+        
+        .plano-destaque {
+            border: 3px solid #007bff !important;
+            position: relative;
+        }
+        
+        .badge-destaque {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+        
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .preco {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            line-height: 1;
+        }
+        
+        .preco span {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .preco-pequeno {
+            font-size: 0.9rem;
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .lista-beneficios {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .lista-beneficios li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f8f9fa;
+        }
+        
+        .lista-beneficios li:last-child {
+            border-bottom: none;
+        }
+        
+        .lista-beneficios i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        
+        .btn-plano {
+            padding: 12px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .opcoes-preco {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .opcao-preco {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .opcao-preco:hover {
+            border-color: #007bff;
+        }
+        
+        .opcao-preco.selecionada {
+            border-color: #007bff;
+            background: #e3f2fd;
+        }
+        
+        .opcao-preco input[type="radio"] {
+            margin-right: 15px;
+            transform: scale(1.2);
+        }
+        
+        .economia-badge {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .preco-modal {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .btn-pagamento {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-pagamento:hover {
+            background: linear-gradient(45deg, #20c997, #28a745);
+            transform: translateY(-2px);
+        }
+
+
+        /* FAQ CSS */
+        .faq-item {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            background: #f8f9fa;
+            padding: 1.25rem;
+            margin: 0;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            font-weight: 600;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6c757d;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            background: white;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .faq-answer.show {
+            padding: 1.25rem;
+            max-height: 500px;
+        }
+        
+        .category-title {
+            color: #495057;
+            border-bottom: 3px solid #dee2e6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .price-highlight {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #28a745;
+        }
