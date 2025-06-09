@@ -18,7 +18,7 @@
 
          /* Header com Parallax */
 .parallax-header {
-    height: 100vh;
+    height: 75vh;
     background: url('/img/banner-2.jpg') center / cover fixed;
     position: relative;
     display: flex;
