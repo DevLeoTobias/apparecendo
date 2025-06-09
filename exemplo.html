@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festhá Decorações - Decorações Infantis Personalizadas | Americana-SP</title>
+    <meta name="description" content="Transforme o aniversário do seu filho com decorações práticas 'Pegue e Monte' e Mini Table. Atendimento personalizado em Americana-SP.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/exemplo.css">s
+   
+</head>
+<body>
+    
+<header class="parallax-header" id="parallax-header">
+  <div class="header-content parallax-element">
+    <img src="img/banner.jpg" alt="Logo FestThá Decorações" class="logo-festtha" /><a href="./index.html">Voltar</a>
+  </div>
+
+  <div class="scroll-indicator">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M7 13l3 3 3-3m-3-4v7m-3-5l3-3 3 3"/>
+    </svg>
+  </div>
+</header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Veja nossas decorações encantadoras</h2>
+            <p class="gallery-subtitle">🧸 Inspire-se com algumas das festas que já transformamos em momentos inesquecíveis.</p>
+            
+            <div class="gallery-grid">
+                <!-- Item 1: Princesas -->
+                <div class="gallery-item" onclick="openModal('modal1')">
+                    <img src="./img/belaefera.jpg" alt="Decoração tema Princesas" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Decoração Princesas</div>
+                        <div class="gallery-item-description">Mesa temática completa para transformar sua princesa no centro das atenções</div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Sistema Pegue e Monte -->
+                <div class="gallery-item" onclick="openModal('modal2')">
+                     <img src="./img/paw-decoracao.jpg" alt="Decoração tema PAW" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Sistema Pegue e Monte</div>
+                        <div class="gallery-item-description">Praticidade total: você busca, monta em casa e devolve depois da festa</div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Mini Table -->
+                <div class="gallery-item" onclick="openModal('modal3')">
+                     <img src="./img/baby-decoracao.jpg" alt="Decoração tema baby" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Mini Table</div>
+                        <div class="gallery-item-description">Solução perfeita para espaços menores sem perder o charme da decoração</div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Super Heróis -->
+                <div class="gallery-item" onclick="openModal('modal4')">
+                     <img src="./img/baby2-decoracao.jpg" alt="Decoração tema Princesas" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Tema Super Heróis</div>
+                        <div class="gallery-item-description">Para os pequenos que sonham em salvar o mundo todos os dias</div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Unicórnio -->
+                <div class="gallery-item" onclick="openModal('modal5')">
+                     <img src="./img/barbie-decoracao.jpg" alt="Decoração tema Princesas" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Tema Unicórnio</div>
+                        <div class="gallery-item-description">Magia e cores que transformam qualquer festa num mundo de fantasia</div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Festa Completa -->
+                <div class="gallery-item" onclick="openModal('modal6')">
+                    <div class="gallery-item-placeholder">
+                        <div class="placeholder-icon">🎉</div>
+                        <div>Festa Completa</div>
+                        <small>Substitua por imagem real</small>
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Festa Completa</div>
+                        <div class="gallery-item-description">Do setup à limpeza: cuidamos de cada detalhe para você só curtir</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-footer">
+                <a href="https://www.instagram.com/festhadecora/" class="cta-button">📲 Ver mais no Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais para cada foto -->
+    <div id="modal1" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img src="./img/belaefera.jpg" alt="Decoração tema Princesas">
+        </div>
+    </div>
+
+    <div id="modal2" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img src="./img/paw-decoracao.jpg" alt="Decoração tema paw">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+             <img src="./img/baby-decoracao.jpg" alt="Decoração tema baby" loading="lazy">
+        </div>
+    </div>
+
+    <div id="modal4" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img src="./img/baby2-decoracao.jpg" alt="Decoração tema Princesas" loading="lazy">
+        </div>
+    </div>
+
+    <div id="modal5" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img src="./img/barbie-decoracao.jpg" alt="Decoração tema Princesas" loading="lazy">
+        </div>
+    </div>
+
+    <div id="modal6" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div style="padding: 3rem; text-align: center; background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que as mães estão dizendo</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Ficou tudo perfeito! Meu filho amou cada detalhe da decoração. Super recomendo!"</p>
+                    <p class="testimonial-author">- Maria S.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Facilitou muito a minha vida com a praticidade do 'Pegue e Monte'. Montei tudo sozinha!"</p>
+                    <p class="testimonial-author">- Ana P.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Decoração linda e atendimento impecável! Voltarei a usar com certeza."</p>
+                    <p class="testimonial-author">- Juliana R.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="https://wa.me/5519999999999?text=Olá! Quero essa qualidade na festa do meu filho!" class="cta-button">📲 Eu também quero essa qualidade!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎉 Festhá Decorações</h3>
+                    <p>Transformando aniversários em momentos mágicos com decorações personalizadas e práticas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Nossos Serviços</h3>
+                    <p>• Sistema Pegue e Monte</p>
+                    <p>• Mini Table</p>
+                    <p>• Decorações Personalizadas</p>
+                    <p>• Temas Variados</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📱 WhatsApp: (19) 99999-9999</p>
+                    <p>📍 Americana - SP</p>
+                    <p>📧 contato@festhadecoracao.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Festhá Decorações. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="https://wa.me/5519999999999?text=Olá! Vim pelo site e quero fazer um orçamento!" class="floating-cta">💬 WhatsApp</a>
+
+    <script>
+         // Efeito Parallax mais suave
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.getElementById('parallax-header');
+            const content = document.querySelector('.header-content');
+            
+            // Parallax no background
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+            
+            // Movimento suave do conteúdo
+            const contentSpeed = scrolled * 0.3;
+            content.style.transform = `translateY(${contentSpeed}px)`;
+            
+            // Fade out do conteúdo quando sai da tela
+            const opacity = Math.max(1 - scrolled / window.innerHeight, 0);
+            content.style.opacity = opacity;
+        });
+
+        // Scroll suave para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada dos cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplica animação aos cards
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`;
+            observer.observe(card);
+        });
+          // Menu mobile
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.textContent = '☰';
+            });
+        });
+        // Abrir modal
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Fechar modal
+        function closeModal(event) {
+            if (!event || event.target.classList.contains('modal') || event.target.classList.contains('modal-close')) {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => modal.classList.remove('show'));
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Fechar com ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Performance: Lazy loading já está no HTML com loading="lazy"
+        
+        // Melhorar acessibilidade: adicionar navegação por teclado nos modais
+        document.addEventListener('keydown', function(e) {
+            const openModal = document.querySelector('.modal.show');
+            if (openModal && e.key === 'Tab') {
+                // Manter foco dentro do modal
+                const focusableElements = openModal.querySelectorAll('.modal-close');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+                
+                if (e.shiftKey && document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                } else if (!e.shiftKey && document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
