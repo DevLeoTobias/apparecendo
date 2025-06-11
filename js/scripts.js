@@ -184,12 +184,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (dadosPlano.nome === 'visibilidade') {
                         urlPagamento = dadosPlano.periodo === 'mensal' 
-                            ? "https://pagamento.infinitepay.io/link-vis-mensal"
-                            : "https://pagamento.infinitepay.io/link-vis-tri";
+                            ? "https://pay.kirvano.com/a7ea45cc-9ff4-4ba9-a44b-ebc5d4317b57"
+                            : "https://pay.kirvano.com/97ed8fde-d098-4551-ac80-f1a26ef120ad";
                     } else if (dadosPlano.nome === 'impulso') {
                         urlPagamento = dadosPlano.periodo === 'mensal' 
-                            ? "https://pagamento.infinitepay.io/link-impulso-mensal"
-                            : "https://pagamento.infinitepay.io/link-impulso-tri";
+                            ? "https://pay.kirvano.com/61c93774-5943-411e-b69d-6aeafe9329e9"
+                            : "https://pay.kirvano.com/68a77c92-2342-4326-9636-ea1ae42ba727";
                     }
 
                         // Redirecionar o cliente
