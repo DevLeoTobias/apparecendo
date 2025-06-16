@@ -53,6 +53,12 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Facebook Domain Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="pvx5vberv3ys30vnndytfw4ys1gx5d"
+    />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -206,17 +212,17 @@
                     <!-- * * This can be a video, image, or just about anything else.-->
                     <!-- * * Set the max width of your media to 100% and the height to-->
                     <!-- * * 100% like the demo example below.-->
-                    <video
-                      muted="muted"
-                      autoplay="autoplay"
-                      loop=""
-                      style="max-width: 100%; height: 100%"
-                    >
-                      <source
-                        src="/assets/video/video-mobile.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
+                    <div style="max-width: 100%; height: 100%">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/iOm1RbHlBbs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -237,31 +243,42 @@
             </h2>
 
             <div class="row g-4">
+              <!-- Etapa 1 -->
               <div class="col-12 col-md-4">
                 <div
                   class="secao2-anuncio d-flex flex-column align-items-center"
                 >
-                  <div class="circle-anuncio">1</div>
+                  <div class="circle-anuncio">
+                    <i class="bi bi-cart-check fs-2 text-white"></i>
+                  </div>
                   <div class="label text-white mt-2">
                     Escolha seu plano ideal
                   </div>
                 </div>
               </div>
+
+              <!-- Etapa 2 -->
               <div class="col-12 col-md-4">
                 <div
                   class="secao2-anuncio d-flex flex-column align-items-center"
                 >
-                  <div class="circle-anuncio">2</div>
+                  <div class="circle-anuncio">
+                    <i class="bi bi-tools fs-2 text-white"></i>
+                  </div>
                   <div class="label text-white mt-2">
                     Deixe que gerenciamos seus anúncios
                   </div>
                 </div>
               </div>
+
+              <!-- Etapa 3 -->
               <div class="col-12 col-md-4">
                 <div
                   class="secao2-anuncio d-flex flex-column align-items-center"
                 >
-                  <div class="circle-anuncio">3</div>
+                  <div class="circle-anuncio">
+                    <i class="bi bi-graph-up-arrow fs-2 text-white"></i>
+                  </div>
                   <div class="label text-white mt-2">
                     Receba novos clientes todos os dias
                   </div>
@@ -272,6 +289,7 @@
         </div>
       </div>
     </aside>
+
     <!--Como funciona-->
     <section id="como-funciona-preview" class="bg-light">
       <div class="container px-4 px-lg-5 text-center">
@@ -526,17 +544,17 @@
                     <!-- * * This can be a video, image, or just about anything else.-->
                     <!-- * * Set the max width of your media to 100% and the height to-->
                     <!-- * * 100% like the demo example below.-->
-                    <div style="max-width: 100%; height: 100%">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/mTkSN0q7awo"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
+                    <video
+                      muted="muted"
+                      autoplay="autoplay"
+                      loop=""
+                      style="max-width: 100%; height: 100%"
+                    >
+                      <source
+                        src="/assets/video/video-mobile.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
                   </div>
                 </div>
               </div>
@@ -1044,7 +1062,7 @@
             Clientes e Feedback
           </h2>
 
-          <div class="row g-4 mt-5">
+          <div class="row g-4 mt-5 justify-content-center">
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card h-100 shadow">
@@ -1098,23 +1116,24 @@
               </div>
             </div>
 
-            <!-- Card 3 -->
-            <!-- <div class="col-md-4">
-                          <div class="card h-100 shadow">
-                            <div class="card-body text-center p-4">
-                                <div class="mb-3">
-                                    <img src="#" 
-                                         alt="Pedro Oliveira" class="rounded-circle img-profile" width="120" height="120">
-                                </div>
-                                <h5 class="card-title"></h5>
-                                <p class="text-muted small">texto aqui</p>
-                                <div class="mb-3">
-                                    <span class="text-warning"></span>
-                                </div>
-                                <p class="card-text">textoaqui</p>
-                            </div>
-                          </div>
-                    </div>-->
+            <!-- Card 3 (comentado, fica aí pro futuro) -->
+            <!--
+  <div class="col-md-4">
+    <div class="card h-100 shadow">
+      <div class="card-body text-center p-4">
+        <div class="mb-3">
+          <img src="#" alt="Pedro Oliveira" class="rounded-circle img-profile" width="120" height="120">
+        </div>
+        <h5 class="card-title">Pedro Oliveira</h5>
+        <p class="text-muted small">texto aqui</p>
+        <div class="mb-3">
+          <span class="text-warning"></span>
+        </div>
+        <p class="card-text">textoaqui</p>
+      </div>
+    </div>
+  </div>
+  -->
           </div>
         </div>
       </div>

@@ -515,7 +515,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -8606,7 +8606,6 @@ fieldset:disabled .btn {
 .rounded-circle {
   border-radius: 50% !important;
 }
-
 
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
