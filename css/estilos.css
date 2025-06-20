@@ -391,3 +391,182 @@
   border-radius: 6px;
   border-left: 4px solid #28a745;
 }
+
+/* CSS da página Portfólio */
+
+/* Compensação da navbar fixa */
+:root {
+  --navbar-height: 80px; /* Ajuste esse valor se sua navbar tiver outra altura */
+}
+
+body {
+  padding-top: var(--navbar-height);
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 2rem;
+}
+
+.portfolio-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #f39c12;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid da galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 3.5rem;
+}
+
+/* Cards dos projetos */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1e8ed;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(45deg, #f1f2f6, #ddd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f2f6;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  display: block;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+.project-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #040270 0%, #040270d0 100%);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.project-link:hover {
+  background: linear-gradient(135deg, #fd5a02b9 0%, #fd5a02a6 100%);
+  transform: translateX(2px);
+}
+
+.project-link::after {
+  content: "→";
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover::after {
+  transform: translateX(3px);
+}
+
+/* Responsividade */
+@media (min-width: 640px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+}
+
+/* Acessibilidade: Reduzir movimento se o usuário quiser */
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+
+  .project-link::after {
+    transition: none;
+  }
+}
+
+/* Focus states para navegação por teclado */
+.project-link:focus {
+  outline: 3px solid #f39c12;
+  outline-offset: 2px;
+}
